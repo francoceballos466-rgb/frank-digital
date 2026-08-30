@@ -3,28 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frank Digital | Servicios Profesionales</title>
+<title>Frank Digital</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#02040a;color:#fff;font-family:Arial,sans-serif}
-header{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#000;border-bottom:1px solid #d9a400}
-.logo{color:#ffc400;font-size:45px;font-weight:900;text-shadow:0 0 20px #ffc400}
-nav a{color:#fff;text-decoration:none;margin:0 12px}
-.whatsapp{background:#00c853;padding:12px 20px;border-radius:30px}
-.hero{min-height:420px;padding:70px 8%;display:flex;align-items:center;justify-content:space-between;background:radial-gradient(circle,#08235a,#02040a)}
-.hero h1{font-size:55px;margin:0}
-.gold{color:#ffc400}
-.hero .fd{font-size:140px;color:#ffc400;font-weight:900;text-shadow:0 0 35px #ffc400}
-.cards{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:50px 5%}
-.card{width:320px;background:#080d18;border:1px solid #086cff;border-radius:22px;padding:28px;box-shadow:0 0 30px #004cff44;transition:.3s}
+body{margin:0;background:#020308;color:#fff;font-family:Arial,sans-serif}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 7%;background:#000;border-bottom:1px solid #ffc400}
+.logo{font-size:45px;font-weight:900;color:#ffc400;text-shadow:0 0 25px #ffc400}
+nav a{color:#fff;text-decoration:none;margin:10px}
+.hero{padding:80px 8%;display:flex;justify-content:space-between;align-items:center;background:radial-gradient(circle,#102b68,#020308)}
+.hero h1{font-size:55px}.gold{color:#ffc400}
+.hero-logo{font-size:130px;color:#ffc400;font-weight:900;text-shadow:0 0 40px #ffc400}
+.cards{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:50px}
+.card{width:320px;background:#070b16;border:1px solid #087cff;border-radius:22px;padding:30px;box-shadow:0 0 30px #0055ff55}
 .card:hover{transform:translateY(-8px)}
 .price{font-size:40px;color:#ffc400;font-weight:bold}
-button{width:100%;padding:15px;border:0;border-radius:30px;background:#00c853;color:#fff;font-weight:bold}
-.section{padding:35px;text-align:center;background:#000}
+button{width:100%;padding:15px;border:0;border-radius:30px;background:#00c853;color:#fff;font-weight:bold;cursor:pointer}
+.pay{text-align:center;background:#000;padding:40px}
+.pay div{display:inline-block;margin:15px;padding:15px;border-radius:15px;border:1px solid #333}
 .benefits{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:40px}
-.item{width:230px;padding:20px;border:1px solid #174cff;border-radius:15px;text-align:center}
+.box{width:220px;text-align:center;padding:25px;border:1px solid #174cff;border-radius:18px;background:#050812}
+.float{position:fixed;right:25px;bottom:25px;background:#00c853;padding:16px 25px;border-radius:40px;color:white;text-decoration:none;font-weight:bold}
 footer{text-align:center;padding:25px;color:#aaa}
-@media(max-width:700px){header{display:block;text-align:center}.hero{display:block;text-align:center}.hero h1{font-size:35px}.hero .fd{font-size:90px}}
+@media(max-width:700px){header,.hero{display:block;text-align:center}.hero h1{font-size:35px}.hero-logo{font-size:80px}}
 </style>
 </head>
 <body>
@@ -35,7 +35,6 @@ footer{text-align:center;padding:25px;color:#aaa}
 <a href="#">Inicio</a>
 <a href="#servicios">Servicios</a>
 <a href="#pagos">Pagos</a>
-<a class="whatsapp" href="#">WhatsApp</a>
 </nav>
 </header>
 
@@ -43,49 +42,54 @@ footer{text-align:center;padding:25px;color:#aaa}
 <div>
 <h1>CONECTATE <span class="gold">AL FUTURO</span></h1>
 <h2>TV Digital + Internet ilimitado</h2>
-<p>Activación rápida • Soporte personalizado • Servicio confiable</p>
+<p>⚡ Activación inmediata | 🛡️ Servicio confiable | 🎧 Soporte personalizado</p>
 </div>
-<div class="fd">FD</div>
+<div class="hero-logo">FD</div>
 </section>
 
 <section id="servicios" class="cards">
+
 <div class="card">
 <h2>📺 TV DIGITAL PREMIUM</h2>
 <div class="price">$9.000</div>
-<p>por mes</p>
-<p>✔ Canales en vivo<br>✔ Smart TV, celular y PC<br>✔ Activación inmediata<br>✔ Soporte incluido</p>
-<button>Contratar por WhatsApp</button>
+<p>Mensual</p>
+<p>✔ Canales en vivo<br>✔ Smart TV, celular y PC<br>✔ Soporte incluido</p>
+<button>WhatsApp - Contratar</button>
 </div>
 
 <div class="card">
-<h2>📱 INTERNET CLARO</h2>
+<h2>🔴 INTERNET CLARO</h2>
 <div class="price">$8.500</div>
-<p>por mes</p>
-<p>✔ Internet ilimitado<br>✔ Activación rápida<br>✔ Servicio móvil</p>
-<button>Activar ahora</button>
+<p>Mensual</p>
+<p>✔ Internet ilimitado<br>✔ Activación inmediata<br>✔ Servicio móvil</p>
+<button>WhatsApp - Activar</button>
 </div>
 
 <div class="card">
-<h2>📱 INTERNET PERSONAL</h2>
+<h2>🔵 INTERNET PERSONAL</h2>
 <div class="price">$8.500</div>
-<p>por mes</p>
-<p>✔ Internet ilimitado<br>✔ Activación rápida<br>✔ Servicio móvil</p>
-<button>Activar ahora</button>
+<p>Mensual</p>
+<p>✔ Internet ilimitado<br>✔ Activación inmediata<br>✔ Servicio móvil</p>
+<button>WhatsApp - Activar</button>
 </div>
+
 </section>
 
-<section id="pagos" class="section">
+<section id="pagos" class="pay">
 <h2>FORMAS DE PAGO</h2>
-<p>🟢 WhatsApp &nbsp; | &nbsp; 💙 Mercado Pago &nbsp; | &nbsp; 🟡 Lemon</p>
+<div>🟢 WhatsApp</div>
+<div>💙 Mercado Pago</div>
+<div>🟡 Lemon</div>
 </section>
 
 <section class="benefits">
-<div class="item">⚡<br>Activación inmediata</div>
-<div class="item">🛡️<br>Servicio confiable</div>
-<div class="item">🎧<br>Soporte personalizado</div>
+<div class="box">⚡<br>Activación rápida</div>
+<div class="box">🛡️<br>Servicio seguro</div>
+<div class="box">⭐<br>Atención personalizada</div>
 </section>
 
-<footer>© Frank Digital - Servicios Profesionales</footer>
+<a class="float" href="#">WhatsApp</a>
 
+<footer>© Frank Digital - Servicios Profesionales</footer>
 </body>
 </html>
