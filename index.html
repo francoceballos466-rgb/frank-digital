@@ -6,98 +6,86 @@
 <title>Frank Digital | Servicios Profesionales</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#03050b;color:white;font-family:Arial,Helvetica,sans-serif}
-header{background:#000;padding:25px;text-align:center;border-bottom:1px solid #d9a400}
-.logo{font-size:60px;font-weight:900;color:#ffc400;text-shadow:0 0 20px #ffc400}
-.brand{font-size:28px;font-weight:bold}
-.sub{letter-spacing:4px;color:#ddd}
-.hero{padding:70px 20px;text-align:center;background:radial-gradient(circle,#09204a,#02040a)}
-.hero h1{font-size:48px;margin:0}
+body{margin:0;background:#02040a;color:#fff;font-family:Arial,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#000;border-bottom:1px solid #d9a400}
+.logo{color:#ffc400;font-size:45px;font-weight:900;text-shadow:0 0 20px #ffc400}
+nav a{color:#fff;text-decoration:none;margin:0 12px}
+.whatsapp{background:#00c853;padding:12px 20px;border-radius:30px}
+.hero{min-height:420px;padding:70px 8%;display:flex;align-items:center;justify-content:space-between;background:radial-gradient(circle,#08235a,#02040a)}
+.hero h1{font-size:55px;margin:0}
 .gold{color:#ffc400}
-.hero p{font-size:20px}
-.container{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:40px}
-.card{width:300px;background:#080d18;border:1px solid #006eff;border-radius:20px;padding:25px;box-shadow:0 0 25px #004cff55}
-.card h2{color:#fff}
-.price{font-size:38px;color:#ffc400;font-weight:bold}
-ul{padding-left:20px;line-height:1.8}
-button{width:100%;padding:15px;border:0;border-radius:30px;background:#00c853;color:white;font-size:17px;font-weight:bold}
-.pay{padding:35px;text-align:center;background:#000;border-top:1px solid #222}
-.pay span{margin:15px;font-size:20px}
-.benefits{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:30px}
-.box{background:#070b14;border-radius:15px;padding:20px;width:220px;text-align:center;border:1px solid #174cff}
+.hero .fd{font-size:140px;color:#ffc400;font-weight:900;text-shadow:0 0 35px #ffc400}
+.cards{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:50px 5%}
+.card{width:320px;background:#080d18;border:1px solid #086cff;border-radius:22px;padding:28px;box-shadow:0 0 30px #004cff44;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.price{font-size:40px;color:#ffc400;font-weight:bold}
+button{width:100%;padding:15px;border:0;border-radius:30px;background:#00c853;color:#fff;font-weight:bold}
+.section{padding:35px;text-align:center;background:#000}
+.benefits{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:40px}
+.item{width:230px;padding:20px;border:1px solid #174cff;border-radius:15px;text-align:center}
 footer{text-align:center;padding:25px;color:#aaa}
+@media(max-width:700px){header{display:block;text-align:center}.hero{display:block;text-align:center}.hero h1{font-size:35px}.hero .fd{font-size:90px}}
 </style>
 </head>
 <body>
 
 <header>
 <div class="logo">FD</div>
-<div class="brand">FRANK DIGITAL</div>
-<div class="sub">SERVICIOS PROFESIONALES</div>
+<nav>
+<a href="#">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#pagos">Pagos</a>
+<a class="whatsapp" href="#">WhatsApp</a>
+</nav>
 </header>
 
 <section class="hero">
+<div>
 <h1>CONECTATE <span class="gold">AL FUTURO</span></h1>
-<p>Entretenimiento y conectividad sin límites</p>
+<h2>TV Digital + Internet ilimitado</h2>
+<p>Activación rápida • Soporte personalizado • Servicio confiable</p>
+</div>
+<div class="fd">FD</div>
 </section>
 
-<section class="container">
-
+<section id="servicios" class="cards">
 <div class="card">
 <h2>📺 TV DIGITAL PREMIUM</h2>
 <div class="price">$9.000</div>
-<p>/ mes</p>
-<ul>
-<li>Canales en vivo</li>
-<li>Smart TV, celular y PC</li>
-<li>Activación rápida</li>
-<li>Soporte personalizado</li>
-</ul>
-<button>🟢 Contratar ahora</button>
+<p>por mes</p>
+<p>✔ Canales en vivo<br>✔ Smart TV, celular y PC<br>✔ Activación inmediata<br>✔ Soporte incluido</p>
+<button>Contratar por WhatsApp</button>
 </div>
 
 <div class="card">
 <h2>📱 INTERNET CLARO</h2>
 <div class="price">$8.500</div>
-<p>/ mes</p>
-<ul>
-<li>Internet ilimitado</li>
-<li>Activación inmediata</li>
-<li>Servicio móvil</li>
-</ul>
-<button>🟢 Activar ahora</button>
+<p>por mes</p>
+<p>✔ Internet ilimitado<br>✔ Activación rápida<br>✔ Servicio móvil</p>
+<button>Activar ahora</button>
 </div>
 
 <div class="card">
 <h2>📱 INTERNET PERSONAL</h2>
 <div class="price">$8.500</div>
-<p>/ mes</p>
-<ul>
-<li>Internet ilimitado</li>
-<li>Activación inmediata</li>
-<li>Servicio móvil</li>
-</ul>
-<button>🟢 Activar ahora</button>
+<p>por mes</p>
+<p>✔ Internet ilimitado<br>✔ Activación rápida<br>✔ Servicio móvil</p>
+<button>Activar ahora</button>
 </div>
-
 </section>
 
-<section class="pay">
+<section id="pagos" class="section">
 <h2>FORMAS DE PAGO</h2>
-<span>🟢 WhatsApp</span>
-<span>💙 Mercado Pago</span>
-<span>🟡 Lemon</span>
+<p>🟢 WhatsApp &nbsp; | &nbsp; 💙 Mercado Pago &nbsp; | &nbsp; 🟡 Lemon</p>
 </section>
 
 <section class="benefits">
-<div class="box">⚡<br>Activación rápida</div>
-<div class="box">🛡️<br>Servicio confiable</div>
-<div class="box">🎧<br>Soporte personalizado</div>
+<div class="item">⚡<br>Activación inmediata</div>
+<div class="item">🛡️<br>Servicio confiable</div>
+<div class="item">🎧<br>Soporte personalizado</div>
 </section>
 
-<footer>
-© Frank Digital - Servicios Profesionales
-</footer>
+<footer>© Frank Digital - Servicios Profesionales</footer>
 
 </body>
 </html>
