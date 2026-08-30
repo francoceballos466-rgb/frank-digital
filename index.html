@@ -2,59 +2,116 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frank Digital Ultra</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Frank Digital Black Gold</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#020308;color:white;font-family:Arial,sans-serif}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:#000;border-bottom:2px solid #ffc400}
-.logo{font-size:48px;font-weight:900;color:#ffc400;text-shadow:0 0 30px #ffc400}
+*{box-sizing:border-box}
+body{margin:0;background:#03040a;color:white;font-family:Arial,sans-serif}
+header{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:#000;border-bottom:2px solid #dcae00;z-index:5}
+.logo{font-size:55px;font-weight:900;color:#ffd000;text-shadow:0 0 30px #ffd000}
 nav a{color:white;text-decoration:none;margin:15px}
-.hero{min-height:650px;padding:80px 7%;display:flex;align-items:center;justify-content:space-between;background:radial-gradient(circle at right,#164ca8,#020308)}
-.hero h1{font-size:70px;margin:0}.gold{color:#ffc400}.hero p{font-size:25px}
-.fd{font-size:200px;font-weight:900;color:#ffc400;text-shadow:0 0 60px #ffc400}
-.wrap{width:90%;margin:auto}.title{text-align:center;font-size:40px;margin:60px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:35px}
-.card{background:#070d18;border:2px solid #0875ff;border-radius:25px;padding:35px;box-shadow:0 0 35px #0066ff55}
-.card h2{font-size:28px}.price{font-size:55px;color:#ffc400;font-weight:bold}.tag{color:#ffc400}
-button{width:100%;padding:18px;border:0;border-radius:30px;background:#00c853;color:white;font-weight:bold;font-size:18px}
-.offer,.catalog,.pay,.trust{margin-top:60px;padding:45px;border-radius:25px}
-.offer{text-align:center;background:linear-gradient(90deg,#111,#123d8c);border:1px solid #ffc400}
-.catalog{background:#050914;text-align:center}
-.grid{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}.item{padding:30px;border:1px solid #175cff;border-radius:20px;width:230px}
-.pay{text-align:center;background:#000}.pay span{padding:18px;border:1px solid #555;border-radius:20px;margin:10px;display:inline-block}
-.trust{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}.box{padding:30px;width:250px;text-align:center;border:1px solid #175cff;border-radius:20px}
-.float{position:fixed;right:25px;bottom:25px;background:#00c853;color:white;padding:18px 30px;border-radius:40px;text-decoration:none}
+.hero{min-height:650px;padding:80px 7%;display:flex;align-items:center;justify-content:space-between;background:radial-gradient(circle at 80% 50%,#264f9c,#020308)}
+.hero h1{font-size:75px;margin:0}
+.gold{color:#ffd000}
+.hero p{font-size:25px}
+.fd{font-size:220px;font-weight:900;color:#ffd000;text-shadow:0 0 70px #ffd000}
+.container{width:92%;margin:auto}
+.title{text-align:center;font-size:42px;margin:60px 0 35px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:35px}
+.card{background:#070b15;border:2px solid #0d6cff;border-radius:25px;padding:35px;box-shadow:0 0 35px #0055ff55}
+.card:hover{transform:translateY(-8px)}
+.badge{color:#ffd000;font-weight:bold}
+.price{font-size:55px;color:#ffd000;font-weight:900}
+button{width:100%;padding:18px;border:0;border-radius:40px;background:#00c853;color:white;font-size:18px;font-weight:bold}
+.combo{margin:60px auto;padding:45px;text-align:center;border:2px solid #ffd000;border-radius:30px;background:linear-gradient(90deg,#111,#173d8b)}
+.section{margin:50px 0;padding:45px;text-align:center}
+.catalog{background:#060a14;border-radius:25px}
+.grid{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.item{padding:30px;width:230px;border:1px solid #1960ff;border-radius:20px}
+.pay{background:#000;border-radius:25px}
+.pay span{display:inline-block;padding:18px;margin:10px;border:1px solid #555;border-radius:20px}
+.trust{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.box{width:250px;padding:30px;border:1px solid #1960ff;border-radius:20px;background:#050914}
+.float{position:fixed;right:25px;bottom:25px;background:#00c853;color:white;padding:18px 30px;border-radius:50px;text-decoration:none;font-weight:bold}
 footer{text-align:center;padding:30px;color:#aaa}
-@media(max-width:700px){.hero{display:block;text-align:center}.hero h1{font-size:40px}.fd{font-size:90px}}
+@media(max-width:700px){.hero{display:block;text-align:center}.hero h1{font-size:42px}.fd{font-size:100px}}
 </style>
 </head>
 <body>
-<header><div class="logo">FD</div><nav><a>Inicio</a><a>Servicios</a><a>Pagos</a></nav></header>
+
+<header>
+<div class="logo">FD</div>
+<nav><a>Inicio</a><a>Servicios</a><a>Pagos</a></nav>
+</header>
 
 <section class="hero">
 <div>
-<h1>FRANK DIGITAL<br><span class="gold">ULTRA</span></h1>
-<p>📺 TV Digital + 📱 Internet ilimitado</p>
+<h1>FRANK DIGITAL<br><span class="gold">BLACK GOLD</span></h1>
+<p>📺 TV Digital Premium + 📱 Internet ilimitado</p>
 <p>⚡ Activación inmediata | 🔒 Pagos seguros | 🎧 Soporte profesional</p>
 </div>
 <div class="fd">FD</div>
 </section>
 
-<div class="wrap">
-<h2 class="title">Nuestros servicios</h2>
+<div class="container">
+
+<h2 class="title">Servicios Premium</h2>
 <div class="cards">
-<div class="card"><div class="tag">⭐ MÁS VENDIDO</div><h2>📺 TV DIGITAL PREMIUM</h2><div class="price">$9.000</div><p>✓ Canales en vivo<br>✓ Smart TV, celular y PC<br>✓ Soporte incluido</p><button>Contratar ahora</button></div>
-<div class="card"><h2>🔴 INTERNET CLARO</h2><div class="price">$8.500</div><p>✓ Internet ilimitado<br>✓ Activación inmediata<br>✓ Servicio móvil</p><button>Activar ahora</button></div>
-<div class="card"><h2>🔵 INTERNET PERSONAL</h2><div class="price">$8.500</div><p>✓ Internet ilimitado<br>✓ Activación inmediata<br>✓ Servicio móvil</p><button>Activar ahora</button></div>
+
+<div class="card">
+<div class="badge">⭐ MÁS VENDIDO</div>
+<h2>📺 TV DIGITAL PREMIUM</h2>
+<div class="price">$9.000</div>
+<p>✓ Canales en vivo<br>✓ Smart TV, celular y PC<br>✓ Activación rápida<br>✓ Soporte incluido</p>
+<button>Contratar ahora</button>
 </div>
 
-<section class="offer"><h2>🔥 OFERTA ESPECIAL</h2><h3>TV DIGITAL + INTERNET</h3><p>Todo el entretenimiento y conexión en un solo lugar</p></section>
+<div class="card">
+<h2>🔴 INTERNET CLARO</h2>
+<div class="price">$8.500</div>
+<p>✓ Internet ilimitado<br>✓ Activación inmediata<br>✓ Servicio móvil</p>
+<button>Activar ahora</button>
+</div>
 
-<section class="catalog"><h2>Catálogo digital</h2><div class="grid"><div class="item">📺 TV Digital</div><div class="item">📱 Internet</div><div class="item">🎬 Streaming</div><div class="item">🤖 Servicios digitales</div></div></section>
+<div class="card">
+<h2>🔵 INTERNET PERSONAL</h2>
+<div class="price">$8.500</div>
+<p>✓ Internet ilimitado<br>✓ Activación inmediata<br>✓ Servicio móvil</p>
+<button>Activar ahora</button>
+</div>
 
-<section class="pay"><h2>Formas de pago</h2><span>🟢 WhatsApp</span><span>💙 Mercado Pago</span><span>🟡 Lemon</span></section>
+</div>
 
-<section class="trust"><div class="box">⚡ Activación rápida</div><div class="box">⭐ Clientes satisfechos</div><div class="box">🔒 Pagos seguros</div><div class="box">🎧 Soporte personalizado</div></section>
+<section class="combo">
+<h2>🔥 COMBO FRANK DIGITAL</h2>
+<p>TV Digital + Internet en un solo lugar</p>
+<h3>La mejor experiencia digital</h3>
+</section>
+
+<section class="section catalog">
+<h2>Catálogo Digital</h2>
+<div class="grid">
+<div class="item">📺 TV Digital</div>
+<div class="item">📱 Internet</div>
+<div class="item">🎬 Streaming</div>
+<div class="item">🤖 Servicios digitales</div>
+</div>
+</section>
+
+<section class="section pay">
+<h2>Formas de pago</h2>
+<span>🟢 WhatsApp</span>
+<span>💙 Mercado Pago</span>
+<span>🟡 Lemon</span>
+</section>
+
+<section class="trust">
+<div class="box">⚡ Activación inmediata</div>
+<div class="box">⭐ Clientes satisfechos</div>
+<div class="box">🔒 Pagos seguros</div>
+<div class="box">🎧 Soporte personalizado</div>
+</section>
+
 </div>
 
 <a class="float">WhatsApp</a>
