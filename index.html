@@ -3,31 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frank Digital - Servicios Profesionales</title>
+<title>Frank Digital</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#020308;color:#fff;font-family:Arial,sans-serif}
-header{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#000;border-bottom:1px solid #ffc400}
-.logo{font-size:45px;font-weight:900;color:#ffc400;text-shadow:0 0 25px #ffc400}
-nav a{color:#fff;text-decoration:none;margin:12px}
-.btn{background:#00c853;padding:12px 22px;border-radius:30px}
-.hero{padding:70px 8%;display:flex;align-items:center;justify-content:space-between;background:radial-gradient(circle,#123b88,#020308)}
-.hero h1{font-size:55px;margin:0}.gold{color:#ffc400}
+header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#000;border-bottom:1px solid #d8a900}
+.logo{color:#ffc400;font-size:42px;font-weight:900;text-shadow:0 0 25px #ffc400}
+nav a{color:#fff;text-decoration:none;margin:10px}
+.hero{min-height:430px;padding:70px 8%;display:flex;align-items:center;justify-content:space-between;background:radial-gradient(circle at right,#123f91,#020308)}
+.hero h1{font-size:55px;margin:0}
+.gold{color:#ffc400}
 .hero p{font-size:20px}
-.hero-logo{font-size:130px;color:#ffc400;font-weight:900;text-shadow:0 0 45px #ffc400}
-.title{text-align:center;margin-top:40px}
-.cards{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:40px}
-.card{width:330px;background:#080d18;border:1px solid #0b75ff;border-radius:22px;padding:30px;box-shadow:0 0 30px #0066ff55}
+.hero-logo{font-size:140px;color:#ffc400;font-weight:900;text-shadow:0 0 45px #ffc400}
+.section-title{text-align:center;margin:45px 0 20px}
+.cards{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:30px}
+.card{width:330px;background:#070c18;border:1px solid #0875ff;border-radius:22px;padding:30px;box-shadow:0 0 30px #0066ff55}
 .card:hover{transform:translateY(-8px)}
-.tag{color:#ffc400;font-weight:bold}
+.badge{color:#ffc400;font-weight:bold}
 .price{font-size:42px;color:#ffc400;font-weight:900}
-button{width:100%;padding:15px;border:0;border-radius:30px;background:#00c853;color:white;font-weight:bold}
-.pay{background:#000;text-align:center;padding:40px}
-.pay div{display:inline-block;margin:10px;padding:18px;border:1px solid #444;border-radius:15px}
-.benefits{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:40px}
-.box{width:230px;background:#050812;border:1px solid #175cff;border-radius:18px;text-align:center;padding:25px}
-.catalog{padding:40px;text-align:center;background:#02050c}
-.float{position:fixed;right:25px;bottom:25px;background:#00c853;color:white;padding:16px 25px;border-radius:40px;text-decoration:none}
+button,.float{background:#00c853;color:#fff;border:0;border-radius:30px;padding:15px;text-decoration:none;font-weight:bold}
+button{width:100%}
+.payment{text-align:center;background:#000;padding:40px}
+.payment span{display:inline-block;border:1px solid #444;padding:15px;border-radius:15px;margin:10px}
+.trust{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:40px}
+.box{width:230px;text-align:center;padding:25px;border:1px solid #174cff;border-radius:18px}
+.catalog{background:#050914;text-align:center;padding:40px}
+.float{position:fixed;right:25px;bottom:25px}
 footer{text-align:center;padding:25px;color:#aaa}
 @media(max-width:700px){header,.hero{display:block;text-align:center}.hero h1{font-size:35px}.hero-logo{font-size:80px}}
 </style>
@@ -40,35 +41,32 @@ footer{text-align:center;padding:25px;color:#aaa}
 <a href="#">Inicio</a>
 <a href="#servicios">Servicios</a>
 <a href="#pagos">Pagos</a>
-<a class="btn" href="#">WhatsApp</a>
 </nav>
 </header>
 
 <section class="hero">
 <div>
 <h1>CONECTATE <span class="gold">AL FUTURO</span></h1>
-<h2>Entretenimiento y conexión sin límites</h2>
+<h2>Entretenimiento + Internet ilimitado</h2>
 <p>⚡ Activación inmediata | 🛡️ Servicio confiable | 🎧 Soporte personalizado</p>
 </div>
 <div class="hero-logo">FD</div>
 </section>
 
-<h2 class="title">Nuestros Servicios</h2>
-<section id="servicios" class="cards">
+<h2 class="section-title">Nuestros Servicios</h2>
 
+<section id="servicios" class="cards">
 <div class="card">
-<div class="tag">⭐ MÁS VENDIDO</div>
+<div class="badge">⭐ MÁS VENDIDO</div>
 <h2>📺 TV DIGITAL PREMIUM</h2>
 <div class="price">$9.000</div>
-<p>Mensual</p>
-<p>✔ Canales en vivo<br>✔ Smart TV, celular y PC<br>✔ Activación rápida<br>✔ Soporte incluido</p>
-<button>Contratar WhatsApp</button>
+<p>✔ Canales en vivo<br>✔ Smart TV, celular y PC<br>✔ Soporte incluido</p>
+<button>Contratar por WhatsApp</button>
 </div>
 
 <div class="card">
 <h2>🔴 INTERNET CLARO</h2>
 <div class="price">$8.500</div>
-<p>Mensual</p>
 <p>✔ Internet ilimitado<br>✔ Activación inmediata<br>✔ Servicio móvil</p>
 <button>Activar ahora</button>
 </div>
@@ -76,26 +74,24 @@ footer{text-align:center;padding:25px;color:#aaa}
 <div class="card">
 <h2>🔵 INTERNET PERSONAL</h2>
 <div class="price">$8.500</div>
-<p>Mensual</p>
 <p>✔ Internet ilimitado<br>✔ Activación inmediata<br>✔ Servicio móvil</p>
 <button>Activar ahora</button>
 </div>
-
 </section>
 
 <section class="catalog">
-<h2>Más servicios próximamente</h2>
+<h2>Próximamente</h2>
 <p>Streaming • Aplicaciones • Servicios digitales</p>
 </section>
 
-<section id="pagos" class="pay">
+<section id="pagos" class="payment">
 <h2>Formas de pago</h2>
-<div>🟢 WhatsApp</div>
-<div>💙 Mercado Pago</div>
-<div>🟡 Lemon</div>
+<span>🟢 WhatsApp</span>
+<span>💙 Mercado Pago</span>
+<span>🟡 Lemon</span>
 </section>
 
-<section class="benefits">
+<section class="trust">
 <div class="box">⚡<br>Activación inmediata</div>
 <div class="box">🛡️<br>Servicio seguro</div>
 <div class="box">🎧<br>Soporte personalizado</div>
@@ -105,6 +101,5 @@ footer{text-align:center;padding:25px;color:#aaa}
 <a class="float" href="#">WhatsApp</a>
 
 <footer>© Frank Digital - Servicios Profesionales</footer>
-
 </body>
 </html>
