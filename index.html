@@ -3,122 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frank Digital PRO MAX</title>
+<title>Frank Digital Ultra</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#02040a;color:#fff;font-family:Arial,sans-serif}
-header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:#000;border-bottom:2px solid #ffc400}
-.logo{font-size:50px;font-weight:900;color:#ffc400;text-shadow:0 0 30px #ffc400}
-nav a{color:#fff;text-decoration:none;margin:15px}
-.hero{min-height:620px;padding:90px 8%;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(120deg,#06194d,#02040a)}
-.hero h1{font-size:65px;margin:0}
-.gold{color:#ffc400}
-.hero p{font-size:25px}
-.hero-logo{font-size:180px;font-weight:900;color:#ffc400;text-shadow:0 0 60px #ffc400}
-.container{max-width:1400px;margin:auto}
-.title{text-align:center;font-size:35px;margin:50px}
-.cards{display:flex;justify-content:center;gap:35px;flex-wrap:wrap;padding:30px}
-.card{width:360px;background:#080d18;border:2px solid #0875ff;border-radius:25px;padding:35px;box-shadow:0 0 40px #0066ff55}
-.card:hover{transform:scale(1.03)}
-.badge{color:#ffc400;font-weight:bold;font-size:18px}
-.price{font-size:50px;color:#ffc400;font-weight:900}
-button{width:100%;padding:18px;border:0;border-radius:35px;background:#00c853;color:#fff;font-weight:bold;font-size:17px}
-.offer{margin:40px auto;background:linear-gradient(90deg,#111,#071d55);padding:40px;text-align:center;border-radius:25px;max-width:1100px;border:1px solid #ffc400}
-.catalog{padding:50px;text-align:center;background:#050914}
-.grid{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
-.item{width:230px;padding:25px;border:1px solid #175cff;border-radius:20px}
-.payment{text-align:center;padding:45px;background:#000}
-.payment span{display:inline-block;padding:18px;margin:10px;border:1px solid #444;border-radius:20px}
-.trust{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:50px}
-.box{width:250px;padding:30px;text-align:center;background:#060b16;border:1px solid #175cff;border-radius:20px}
-.float{position:fixed;right:25px;bottom:25px;background:#00c853;color:white;padding:18px 30px;border-radius:50px;text-decoration:none;font-weight:bold}
+*{box-sizing:border-box}body{margin:0;background:#020308;color:white;font-family:Arial,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:#000;border-bottom:2px solid #ffc400}
+.logo{font-size:48px;font-weight:900;color:#ffc400;text-shadow:0 0 30px #ffc400}
+nav a{color:white;text-decoration:none;margin:15px}
+.hero{min-height:650px;padding:80px 7%;display:flex;align-items:center;justify-content:space-between;background:radial-gradient(circle at right,#164ca8,#020308)}
+.hero h1{font-size:70px;margin:0}.gold{color:#ffc400}.hero p{font-size:25px}
+.fd{font-size:200px;font-weight:900;color:#ffc400;text-shadow:0 0 60px #ffc400}
+.wrap{width:90%;margin:auto}.title{text-align:center;font-size:40px;margin:60px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:35px}
+.card{background:#070d18;border:2px solid #0875ff;border-radius:25px;padding:35px;box-shadow:0 0 35px #0066ff55}
+.card h2{font-size:28px}.price{font-size:55px;color:#ffc400;font-weight:bold}.tag{color:#ffc400}
+button{width:100%;padding:18px;border:0;border-radius:30px;background:#00c853;color:white;font-weight:bold;font-size:18px}
+.offer,.catalog,.pay,.trust{margin-top:60px;padding:45px;border-radius:25px}
+.offer{text-align:center;background:linear-gradient(90deg,#111,#123d8c);border:1px solid #ffc400}
+.catalog{background:#050914;text-align:center}
+.grid{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}.item{padding:30px;border:1px solid #175cff;border-radius:20px;width:230px}
+.pay{text-align:center;background:#000}.pay span{padding:18px;border:1px solid #555;border-radius:20px;margin:10px;display:inline-block}
+.trust{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}.box{padding:30px;width:250px;text-align:center;border:1px solid #175cff;border-radius:20px}
+.float{position:fixed;right:25px;bottom:25px;background:#00c853;color:white;padding:18px 30px;border-radius:40px;text-decoration:none}
 footer{text-align:center;padding:30px;color:#aaa}
-@media(max-width:700px){header,.hero{display:block;text-align:center}.hero h1{font-size:38px}.hero-logo{font-size:90px}}
+@media(max-width:700px){.hero{display:block;text-align:center}.hero h1{font-size:40px}.fd{font-size:90px}}
 </style>
 </head>
 <body>
-
-<header>
-<div class="logo">FD</div>
-<nav>
-<a href="#">Inicio</a>
-<a href="#servicios">Servicios</a>
-<a href="#pagos">Pagos</a>
-</nav>
-</header>
+<header><div class="logo">FD</div><nav><a>Inicio</a><a>Servicios</a><a>Pagos</a></nav></header>
 
 <section class="hero">
 <div>
-<h1>FRANK DIGITAL<br><span class="gold">PRO MAX</span></h1>
+<h1>FRANK DIGITAL<br><span class="gold">ULTRA</span></h1>
 <p>📺 TV Digital + 📱 Internet ilimitado</p>
-<p>⚡ Activación inmediata | 🔒 Seguridad | 🎧 Soporte profesional</p>
+<p>⚡ Activación inmediata | 🔒 Pagos seguros | 🎧 Soporte profesional</p>
 </div>
-<div class="hero-logo">FD</div>
+<div class="fd">FD</div>
 </section>
 
-<div class="container">
-<h2 class="title">Nuestros Servicios</h2>
-
-<section id="servicios" class="cards">
-
-<div class="card">
-<div class="badge">⭐ MÁS VENDIDO</div>
-<h2>📺 TV DIGITAL PREMIUM</h2>
-<div class="price">$9.000</div>
-<p>✔ Canales en vivo<br>✔ Smart TV, celular y PC<br>✔ Activación rápida<br>✔ Soporte incluido</p>
-<button>🟢 Comprar ahora</button>
+<div class="wrap">
+<h2 class="title">Nuestros servicios</h2>
+<div class="cards">
+<div class="card"><div class="tag">⭐ MÁS VENDIDO</div><h2>📺 TV DIGITAL PREMIUM</h2><div class="price">$9.000</div><p>✓ Canales en vivo<br>✓ Smart TV, celular y PC<br>✓ Soporte incluido</p><button>Contratar ahora</button></div>
+<div class="card"><h2>🔴 INTERNET CLARO</h2><div class="price">$8.500</div><p>✓ Internet ilimitado<br>✓ Activación inmediata<br>✓ Servicio móvil</p><button>Activar ahora</button></div>
+<div class="card"><h2>🔵 INTERNET PERSONAL</h2><div class="price">$8.500</div><p>✓ Internet ilimitado<br>✓ Activación inmediata<br>✓ Servicio móvil</p><button>Activar ahora</button></div>
 </div>
 
-<div class="card">
-<h2>🔴 INTERNET CLARO</h2>
-<div class="price">$8.500</div>
-<p>✔ Internet ilimitado<br>✔ Activación inmediata<br>✔ Servicio móvil</p>
-<button>🟢 Activar ahora</button>
+<section class="offer"><h2>🔥 OFERTA ESPECIAL</h2><h3>TV DIGITAL + INTERNET</h3><p>Todo el entretenimiento y conexión en un solo lugar</p></section>
+
+<section class="catalog"><h2>Catálogo digital</h2><div class="grid"><div class="item">📺 TV Digital</div><div class="item">📱 Internet</div><div class="item">🎬 Streaming</div><div class="item">🤖 Servicios digitales</div></div></section>
+
+<section class="pay"><h2>Formas de pago</h2><span>🟢 WhatsApp</span><span>💙 Mercado Pago</span><span>🟡 Lemon</span></section>
+
+<section class="trust"><div class="box">⚡ Activación rápida</div><div class="box">⭐ Clientes satisfechos</div><div class="box">🔒 Pagos seguros</div><div class="box">🎧 Soporte personalizado</div></section>
 </div>
 
-<div class="card">
-<h2>🔵 INTERNET PERSONAL</h2>
-<div class="price">$8.500</div>
-<p>✔ Internet ilimitado<br>✔ Activación inmediata<br>✔ Servicio móvil</p>
-<button>🟢 Activar ahora</button>
-</div>
-
-</section>
-
-<section class="offer">
-<h2>🔥 OFERTA ESPECIAL</h2>
-<h3>TV DIGITAL + INTERNET</h3>
-<p>Todo el entretenimiento y conexión en un solo lugar</p>
-</section>
-
-<section class="catalog">
-<h2>Catálogo Digital</h2>
-<div class="grid">
-<div class="item">📺 TV Digital</div>
-<div class="item">📱 Internet</div>
-<div class="item">🎬 Streaming</div>
-<div class="item">🤖 Servicios digitales</div>
-</div>
-</section>
-
-<section id="pagos" class="payment">
-<h2>Formas de pago</h2>
-<span>🟢 WhatsApp</span>
-<span>💙 Mercado Pago</span>
-<span>🟡 Lemon</span>
-</section>
-
-<section class="trust">
-<div class="box">⚡<br>Activación inmediata</div>
-<div class="box">⭐<br>Clientes satisfechos</div>
-<div class="box">🔒<br>Pagos seguros</div>
-<div class="box">🎧<br>Soporte profesional</div>
-</section>
-
-</div>
-
-<a class="float" href="#">WhatsApp</a>
+<a class="float">WhatsApp</a>
 <footer>© Frank Digital - Servicios Profesionales</footer>
-
 </body>
 </html>
