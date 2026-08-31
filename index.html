@@ -2,110 +2,70 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Frank Digital 17.0 Gold Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frank Digital Ultra Premium</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#020308;color:#fff;font-family:Arial,sans-serif}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:#000;border-bottom:2px solid #ffc400}
-.logo{font-size:55px;font-weight:900;color:#ffc400;text-shadow:0 0 30px #ffc400}
-nav a{color:#fff;margin:15px;text-decoration:none}
-.hero{padding:80px 7%;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(120deg,#071d55,#020308)}
-.hero h1{font-size:70px;margin:0}.gold{color:#ffc400}
-.hero p{font-size:22px}
-.fd{font-size:220px;font-weight:900;color:#ffc400;text-shadow:0 0 70px #ffc400}
-.btn{display:inline-block;background:#00c853;color:#fff;padding:18px 35px;border-radius:40px;text-decoration:none;font-weight:bold}
-.container{width:92%;margin:auto}
-.title{text-align:center;font-size:42px;margin:55px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
-.card{background:#080d18;border:2px solid #126cff;border-radius:25px;padding:35px;text-align:center;box-shadow:0 0 35px #0066ff55}
-.icon{font-size:70px}
-.price{font-size:55px;color:#ffc400;font-weight:900}
-.badge{color:#ffc400;font-weight:bold}
-.card .btn{width:100%;margin-top:20px}
-.section{margin:55px 0;padding:45px;text-align:center;border-radius:25px;background:#060a14}
-.offer{border:2px solid #ffc400;background:linear-gradient(90deg,#111,#19438f)}
-.item,.box{display:inline-block;padding:25px;margin:10px;border:1px solid #126cff;border-radius:20px}
-.pay{background:#000}
-.float{position:fixed;right:25px;bottom:25px;background:#00c853;color:#fff;padding:20px 30px;border-radius:50px;text-decoration:none;font-weight:bold}
-footer{text-align:center;padding:30px;color:#aaa}
+body{margin:0;background:#02050d;color:white;font-family:Arial,sans-serif}
+header{padding:50px 8%;background:linear-gradient(120deg,#071b52,#02050d);border-bottom:1px solid #d4af37}
+h1{font-size:48px;margin:0;color:#fff} h1 span{color:#ffc400}
+.hero p{font-size:20px}
+.container{padding:35px 5%}
+.cards{display:flex;gap:25px;justify-content:center;flex-wrap:wrap}
+.card{background:#080d19;border:1px solid #0066ff;border-radius:18px;padding:30px;width:300px;box-shadow:0 0 20px #001d66}
+.price{font-size:34px;color:#ffc400;font-weight:bold}
+button{background:#00d45a;color:white;border:0;border-radius:30px;padding:15px 30px;font-weight:bold;cursor:pointer}
+.combo{margin:35px auto;background:linear-gradient(90deg,#10131d,#153b8f);border:1px solid #d4af37;padding:25px;text-align:center;border-radius:15px}
+.section{background:#060912;padding:25px;text-align:center;margin-top:25px;border-radius:15px}
+a{color:white;text-decoration:none}
 </style>
 </head>
 <body>
-
-<header>
-<div class="logo">FD</div>
-<nav><a href="#">Inicio</a><a href="#">Servicios</a><a href="#">Pagos</a></nav>
+<header class="hero">
+<h1>FRANK DIGITAL <span>ULTRA PREMIUM</span></h1>
+<p>TV Digital Premium + Internet ilimitado en un solo lugar</p>
+<p>⚡ Activación rápida | 🔒 Pagos seguros | ⭐ Atención personalizada</p>
 </header>
 
-<section class="hero">
-<div>
-<h1>FRANK DIGITAL<br><span class="gold">GOLD PRO</span></h1>
-<p>📺 TV Digital Premium + 📱 Internet ilimitado</p>
-<p>⚡ Activación inmediata | 🔒 Pago seguro | 🎧 Soporte profesional</p>
-<a class="btn" href="https://wa.me/593513143401?text=Hola%20Frank%20Digital,%20quiero%20contratar%20un%20servicio">🟢 Comprar ahora</a>
-</div>
-<div class="fd">FD</div>
-</section>
-
 <div class="container">
-<h2 class="title">Servicios Premium</h2>
-
+<h2 style="text-align:center">Nuestros Servicios</h2>
 <div class="cards">
 <div class="card">
-<div class="badge">⭐ MÁS VENDIDO</div>
-<div class="icon">📺</div>
-<h2>TV DIGITAL PREMIUM</h2>
+<h2>📺 TV DIGITAL PREMIUM</h2>
 <div class="price">$9.000</div>
-<p>✓ Canales en vivo<br>✓ Smart TV<br>✓ Celular y PC<br>✓ Soporte incluido</p>
-<a class="btn" href="https://wa.me/593513143401?text=Hola,%20quiero%20contratar%20TV%20Digital">Contratar</a>
+<p>✓ Canales en vivo<br>✓ Smart TV, celular y PC<br>✓ Soporte incluido</p>
+<button onclick="wa('TV Digital')">Contratar</button>
 </div>
 
 <div class="card">
-<div class="icon">🔴</div>
-<h2>INTERNET CLARO</h2>
+<h2>🔴 INTERNET CLARO</h2>
 <div class="price">$8.500</div>
-<p>✓ Internet ilimitado<br>✓ Activación inmediata</p>
-<a class="btn" href="https://wa.me/593513143401?text=Hola,%20quiero%20activar%20Internet%20Claro">Activar</a>
+<p>✓ Internet ilimitado<br>✓ Activación inmediata<br>✓ Servicio móvil</p>
+<button onclick="wa('Internet Claro')">Activar</button>
 </div>
 
 <div class="card">
-<div class="icon">🔵</div>
-<h2>INTERNET PERSONAL</h2>
+<h2>🔵 INTERNET PERSONAL</h2>
 <div class="price">$8.500</div>
-<p>✓ Internet ilimitado<br>✓ Activación inmediata</p>
-<a class="btn" href="https://wa.me/593513143401?text=Hola,%20quiero%20activar%20Internet%20Personal">Activar</a>
+<p>✓ Internet ilimitado<br>✓ Activación inmediata<br>✓ Servicio móvil</p>
+<button onclick="wa('Internet Personal')">Activar</button>
 </div>
 </div>
 
-<section class="offer">
-<h2>🔥 OFERTA FRANK DIGITAL</h2>
-<p>TV Digital + Internet en una sola solución</p>
-</section>
+<div class="combo">
+<h2>🔥 COMBO FRANK DIGITAL</h2>
+<p>TV Digital + Internet para disfrutar todo en un solo servicio</p>
+</div>
 
-<section class="section">
-<h2>Catálogo Digital</h2>
-<div class="item">📺 TV Digital</div>
-<div class="item">📱 Internet</div>
-<div class="item">🎬 Streaming</div>
-<div class="item">🤖 Servicios digitales</div>
-</section>
-
-<section class="section">
-<h2>⭐ Confianza Frank Digital</h2>
-<div class="box">⚡ Activación rápida</div>
-<div class="box">🔒 Pagos seguros</div>
-<div class="box">🎧 Soporte personalizado</div>
-</section>
-
-<section class="section pay">
+<div class="section">
 <h2>Formas de pago</h2>
 <p>🟢 WhatsApp | 💙 Mercado Pago | 🟡 Lemon</p>
-</section>
+</div>
 </div>
 
-<a class="float" href="https://wa.me/593513143401">WhatsApp</a>
-
-<footer>© Frank Digital - Servicios Profesionales</footer>
+<script>
+function wa(servicio){
+window.open('https://wa.me/593513143401?text=Hola Frank Digital, quiero contratar '+servicio,'_blank');
+}
+</script>
 </body>
 </html>
